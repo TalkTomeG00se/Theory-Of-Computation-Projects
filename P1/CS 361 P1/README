@@ -1,0 +1,60 @@
+# Project 1: Deterministic Finite Automata
+
+* Author: Colten Davis
+* Class: CS361 Section 3
+* Semester: Spring 2021
+
+## Overview
+
+This program models a DFA from a given txt file that will it will be run against.
+This program outputs the 5-tuples for a DFA.
+
+## Compiling and Using
+
+This program accepts a .txt file as an input.
+
+To compile: javac fa/dfa/DFADriver.java
+To run: java fa.dfa.DFADriver <replace with .txt file>
+
+The output should look like below:
+
+Q = { x x } 
+Sigma = { x x }
+delta = <values will be tabbed and new line separated>
+q0 = x
+F = { x }
+
+<no or yes values>
+
+## Discussion
+
+This project was difficult. Many hours of Googling finally got me on the write track. 
+The hardest part for me was using the LinkedHashMap/Sets. I have never used those
+before, and I would have much rather done this whole project using string arrays as
+I'm much more familiar with those. The DFAState class was easy enough to make, I only
+needed a few methods. The DFA class took me almost two weeks to put together. There were
+many examples online I had to follow to get the LinkedHashSet to work. Even then, I was 
+getting null values for all my tuples excep the delta table. I had no clue the problem, but
+luckily Visual Studio found the error and I simlply applied the fix it suggested, which in 
+this case was to cast an iterator as a DFAState. I only ran this against the three 
+provided test cases, so hopefully it passes the rest. I am also wondering if this 
+code will be a mess to build onto later.
+
+## Testing
+
+I ran my program against the 3 .txt files provided and the program
+passed all the tests.
+
+## Extra Credit
+
+No extra credit was available.
+
+## Sources used
+
+https://stackoverflow.com/questions/20153970/how-do-i-implement-a-dfa-in-java-without-using-reg-expression
+https://stackoverflow.com/questions/7768759/how-to-convert-nfa-dfa-to-java
+https://www.geeksforgeeks.org/program-build-dfa-starts-end-input-b/
+https://introcs.cs.princeton.edu/java/51language/DFA.java.html
+https://codereview.stackexchange.com/questions/186816/simple-dfa-simulator-in-java
+https://stackoverflow.com/questions/444889/can-i-implement-state-transitions-for-a-dfa-in-java-using-java-util-set
+https://codereview.stackexchange.com/questions/124555/deterministic-finite-automaton-in-java

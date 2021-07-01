@@ -1,0 +1,53 @@
+# Project 3: Regular Expressions
+
+* Author: Colten Davis
+* Class: CS361 Section 3
+* Semester: Spring 2021
+
+## Overview
+
+This program constructs an NFA from a given regular expression.
+
+## Compiling and Using
+
+This program accepts a .txt file as an input.
+
+To compile: javac -cp ".:./CS361FA.jar" re/REDriver.java
+To run: java -cp ".:./CS361FA.jar" re.REDriver <txt file>
+
+The output should look like below:
+
+A series of 6 yes/no values:
+<yes or no>
+<yes or no>
+<yes or no>
+<yes or no>
+<yes or no>
+<yes or no>
+
+
+## Discussion
+
+I found this project much easier than project 1 and 2. We only had to create a single class, and we had the parsing documentation
+that was provided. Only half a dozen new methods had to be created in order to get the project to work. Having already done the NFA project, using
+the methods from that class was easy to understand. I did run into several problems where I would create a 'State' object, but then I'd get
+compilation errors due to the symbol not being found. Once I cast it to a 'NFAState' it worked, which doesn't make sense to me since I created a 'State'
+object in the first place. I was also unable to properly import the 'fa' package. It wouldn't let me use 'fa.*' to just import it all, I had to be specific
+with what I was importing. Other than those few issues and some trial and error with method creation, I felt much better about this project that previous 
+ones.
+
+## Testing
+
+I ran my program against the 3 .txt files provided. The yes/no values match correctly.
+
+## Extra Credit
+
+No extra credit was available.
+
+## Sources used
+http://matt.might.net/articles/parsing-regex-with-recursive-descent/
+https://algs4.cs.princeton.edu/54regexp/NFA.java.html
+https://zetcode.com/java/regex/
+https://stackoverflow.com/questions/11819185/steps-to-creating-an-nfa-from-a-regular-expression
+
+

@@ -1,0 +1,56 @@
+# Project 2: Nondeterministic Finite Automata
+
+* Author: Colten Davis
+* Class: CS361 Section 3
+* Semester: Spring 2021
+
+## Overview
+
+This program models a NFA from a given txt file that will it will be run against.
+This program outputs the 5-tuples for a NFA.
+
+## Compiling and Using
+
+This program accepts a .txt file as an input.
+
+To compile: javac fa/dfa/NFADriver.java
+To run: java fa.dfa.NFADriver <replace with .txt file>
+
+The output should look like below:
+
+Q = { x x } 
+Sigma = { x x }
+delta = <values will be tabbed and new line separated>
+q0 = x
+F = { x }
+
+<no or yes values>
+
+## Discussion
+
+This project was another difficult one, but I feel I did better than I did on this than project 1. I still
+spent hours Googling, reading stackoverflow, looking at exmamples to finally get myself on the right track
+to a working project. Having the interface to be able to stub out the methods makes things easier, and not having to 
+make a toString method made things a bit easier as well. I started this project as soon as it was posted to give myself more time
+than last project, which I started with about a week prior to the due date. The NFA.java class took me almost 2 weeks to implement, 
+copmapred to the NFAState class which was a day or two worth of work. The decision to use a hash map with a set inside the map was 
+an idea I saw one a stackoverflow post. After that decision, it was trial and error going through each method to make sure I had it working. 
+I would say I over-commented this code, but it was the only way I could keep what I was doing straight in my head. 
+
+## Testing
+
+I ran my program against the 3 .txt files provided. The yes/no values match, but the various tuple values are "correct", but some
+are not in the order they are in the project 2 description pdf. I'm really not sure why. I'm hoping that since my yes/no values
+are correct, that indicates that the program is working as intended.
+
+## Extra Credit
+
+No extra credit was available.
+
+## Sources used
+https://algs4.cs.princeton.edu/54regexp/NFA.java.html
+https://www.cs.dartmouth.edu/~cs10/notes/19/code/NFA.java
+https://www.javatpoint.com/non-deterministic-finite-automata
+https://stackoverflow.com/questions/25828694/implementing-a-nondeterminisic-finite-automatonnfa
+https://www.geeksforgeeks.org/program-implement-nfa-epsilon-move-dfa-conversion/
+https://www.javatips.net/api/gtitool-master/jflex/source/JFlex/NFA.java
